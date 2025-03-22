@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12151C;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(195, 239, 212, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+
+    img {
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+        margin-left: 20px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    li a:hover {
+        color: #9FA8D5;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 600px;
+    }
+}
+
+.button-Login {
+    display: flex;
+    gap: 15px;
+
+    button {
+        padding: 12px 24px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .primary {
+        background-color: #97C8A1;
+        color: white;
+    }
+
+    .primary:hover {
+        background-color: #65B383;
+    }
+
+    .secondary {
+        background-color: transparent;
+        color: #C3EFD4;
+        border: 2px solid #C3EFD4;
+    }
+
+    .secondary:hover {
+        background-color: #C3EFD4;
+        color: #12151C;
+    }
+}
